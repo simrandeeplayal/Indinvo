@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/nav_header_vertical_spacing"
+   android:paddingBottom="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="2">
+
+<ImageView
+       android:layout_weight="1.5"
+
+       android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight=".5"
+    android:padding="10dp"
+    android:layout_marginTop="10dp" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:id="@+id/CompanyName"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/EmailID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="android.studio@android.com"
+        android:textColor="#fff" />
+</LinearLayout>
+</LinearLayout>

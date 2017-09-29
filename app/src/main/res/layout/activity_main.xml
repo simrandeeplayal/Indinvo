@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.simrandeep.invoicemaker.Login.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/logo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:background="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/pass"
+        android:background="#fff"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_height="40dp" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/signin"
+        android:text="Sign In"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:shadowColor="#b3afaf"
+        android:background="@drawable/button1"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?" />
+    <TextView
+        android:id="@+id/signup1"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:id="@+id/signup"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:shadowColor="#b3afaf"
+        android:text="Create an Account"
+        android:background="@drawable/button1"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_action_name"
+            android:title="Profile" />
+        <item
+            android:id="@+id/invoice"
+            android:icon="@drawable/invoice"
+            android:checked="true"
+            android:title="Invoices" />
+        <item
+            android:id="@+id/vendors"
+            android:icon="@drawable/vendors"
+            android:title="Vendors" />
+
+    <item android:title="Contact Us"
+        android:id="@+id/contactus"
+        android:icon="@drawable/ic_action_contactus"/>
+
+    <item
+        android:id="@+id/referp"
+        android:icon="@drawable/refer"
+        android:title="Refer to Friend" />
+    </group>    </menu>
+

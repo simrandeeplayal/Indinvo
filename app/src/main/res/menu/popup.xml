@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/upload"
+        android:title="Saved Signature"
+        android:icon="@android:drawable/ic_menu_upload">
+
+    </item>
+   <item
+    android:id="@+id/draw"
+    android:title="Add Signature"
+    android:icon="@android:drawable/ic_menu_upload">
+
+></item>
+</menu>

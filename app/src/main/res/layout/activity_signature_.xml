@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.simrandeep.invoicemaker.Signature_Activity">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_weight="0.2">
+
+  <com.example.simrandeep.invoicemaker.DrawSign
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Signed"
+    android:layout_weight="0.2"/>
+
+     <ImageView
+         android:id="@+id/pSign"
+         android:layout_width="275dp"
+         android:layout_height="175dp"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true"
+         />
+
+     <Button
+         android:id="@+id/ROTATE"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="26dp"
+         android:background="@drawable/rotate"
+         android:layout_below="@+id/pSign"
+         android:layout_centerHorizontal="true" />
+ </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.8"
+        android:weightSum="2"
+        android:padding="2dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PREVIEW"
+            android:id="@+id/previewSignature"
+            android:background="@drawable/button"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SAVE"
+            android:id="@+id/saveSignature"
+            android:background="@drawable/button"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

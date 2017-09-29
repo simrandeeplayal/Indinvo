@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.adity.invoicemaker.Login.OTPCheck">
+
+    <EditText
+        android:layout_marginTop="150dp"
+        android:id="@+id/OTP"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:ems="10"
+        android:maxLength="6"
+        android:hint="Enter the OTP"
+        android:inputType="number" />
+</LinearLayout>
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="22dp"
+        android:src="@drawable/sms" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Verify Mobile Number"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="48dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/referral_background"
+            android:maxLength="6"/>
+
+    </LinearLayout>
+
+<TextView
+    android:background="#fafafa"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:textSize="16sp"
+    android:paddingBottom="0dp"
+    android:textAlignment="center"
+    android:textColor="#004e54"
+    android:text="OTP has been sent to be your registered phone number."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:elevation="2dp"
+            android:text="Submit"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:elevation="2dp"
+            android:text="Resend OTP"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

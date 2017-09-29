@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cbeae7">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffff"
+            android:padding="5dp"
+            android:id="@+id/linearLayout3"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linearLayout2">
+
+            <EditText
+                android:id="@+id/bankname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Bank Name"
+                android:inputType="textCapCharacters"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/IfSc"
+                android:hint="IFSC Code"
+                android:maxLength="11"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_below="@+id/linearLayout3"
+            android:id="@+id/linearLayout4"
+            android:background="#ffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logo"
+                    android:src="@drawable/personlogo"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Holder's Name"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/accholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/accountlogo"
+                    android:src="@drawable/banklogo"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Account Number"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/accno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:maxLength="20"
+                    android:inputType="number"
+                    android:padding="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="25dp"
+            android:layout_below="@+id/linearLayout4"
+            android:id="@+id/linearLayout5"
+            android:background="#ffff">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/button"
+                android:id="@+id/savebank"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cbeae7">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffff"
+            android:padding="5dp"
+            android:id="@+id/linearLayout3"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linearLayout2">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Description"
+                android:id="@+id/description"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="HSNCode"
+                android:id="@+id/HSNcode"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="SGST Rate"
+                android:maxLength="2"
+                android:id="@+id/SGSTcodee"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="CGST Rate"
+                android:maxLength="2"
+                android:id="@+id/CGSTcodee"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="IGST Rate"
+                android:id="@+id/IGSTcodee"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_below="@+id/linearLayout3"
+            android:id="@+id/linearLayout4"
+            android:background="#ffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unit Cost"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/cost"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|bottom"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:hint="0.0"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/quant"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:hint="0"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="25dp"
+            android:layout_below="@+id/linearLayout4"
+            android:id="@+id/linearLayout5"
+            android:background="#ffff">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:id="@+id/save"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/button"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

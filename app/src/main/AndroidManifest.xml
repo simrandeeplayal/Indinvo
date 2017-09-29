@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.simrandeep.invoicemaker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_SMS" />
+    <uses-permission-sdk-23 android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission-sdk-23 android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.MainActivity" />
+        <activity
+            android:name=".Login.signup"
+            android:parentActivityName=".Login.MainActivity" />
+        <activity
+            android:name=".splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fragments.NavigationDrawer"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bank_activity.BankDetails"
+            android:label="Bank Details"
+            android:parentActivityName=".bank_activity.AccPaymentDetailsActivity" />
+        <activity
+            android:name=".AddItem"
+            android:label="Add Item"
+            android:parentActivityName=".InvoiceGenerate" />
+
+        <activty
+            android:name=".InvoiceGen"
+            android:label="Invoice" />
+
+        <activity
+            android:name=".InvoiceGenerate"
+            android:label="Invoice"
+            android:parentActivityName=".typesofinvoice" />
+        <activity
+            android:name=".ClientDetails"
+            android:label="Vendor Details"
+            android:parentActivityName=".Vendor_Details"
+            android:screenOrientation="portrait" />
+        <!-- android:parentActivityName=".InvoiceGenerate" -->
+        <activity
+            android:name=".bank_activity.AccPaymentDetailsActivity"
+            android:label="Payment Details"
+            android:parentActivityName=".InvoiceGenerate" />
+        <activity
+            android:name=".typesofinvoice"
+            android:parentActivityName=".Fragments.NavigationDrawer" />
+        <activity
+            android:name=".Login.OTPCheck"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Vendor_Details"
+            android:label="@string/title_activity_vendor__details"
+            android:parentActivityName=".InvoiceGenerate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pdfreader"
+            android:parentActivityName=".InvoiceGenerate" />
+        <activity
+            android:name=".Discount"
+            android:parentActivityName=".InvoiceGenerate" />
+        <activity
+            android:name=".persondetails"
+            android:parentActivityName=".Fragments.NavigationDrawer" />
+        <activity
+            android:name=".Edits.PersonalEdit"
+            android:parentActivityName=".persondetails" />
+        <activity
+            android:name=".Edits.VendorEDIT"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Edits.BankEdit"
+            android:parentActivityName=".bank_activity.AccPaymentDetailsActivity" />
+        <activity android:name=".Edits.ItemEdit" />
+        <activity
+            android:name=".Signature_Activity"
+            android:parentActivityName=".InvoiceGenerate" />
+        <activity
+            android:name=".explorer"
+            android:parentActivityName=".InvoiceGenerate" />
+        <activity
+            android:name=".Credentials"
+            android:parentActivityName=".Fragments.NavigationDrawer" />
+
+    </application>
+
+</manifest>

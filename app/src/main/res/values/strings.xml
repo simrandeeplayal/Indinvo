@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">IndiInvo</string>
+
+    <string name="title_activity_splash">splash</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="redeem_message">Add referral code and redeem your ₹%1$s now.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="cred">
+        <item name="1">Signatures</item>
+        <item name="2">Stamps</item>
+    </string-array>
+    <string-array name="invoice">
+        <item name="1"><b>For Intra state</b> \n goods traveling within a state </item>
+        <item name="2"><b>For Inter state </b>\n goods traveling between states</item>
+        <item name="3"><b>For Export</b></item>
+        <item name="4"><b>For Exempt Supply </b>\n goods or services or both which attracts nil rate of tax</item>
+        <item name="5"><b>For Sales Returns</b></item>
+        <item name="6"><b>For Charging Extra</b></item>
+        <item name="7"><b>Receipt Voucher</b></item>
+        <item name="8"><b>Refund Voucher</b></item>
+        <item name="9"><b>Payment Voucher</b></item>
+        <item name="10"><b>Invoice for Rcm</b></item>
+
+    </string-array>
+    <string name="post"><b> <h4>Generate a Invoice </h4></b>\n
+    </string>
+    <string name="generate"><h1>Which type of invoice would you like to generate ?</h1></string>
+    <string name="title_activity_bank_details_invo">bankDetailsInvo</string>
+    <string name="title_activity_vendor__details">Vendor_Details</string>
+
+
+</resources>

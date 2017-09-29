@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sign"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#fff"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:background="#a2aeafae"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/sign"
+            android:layout_alignRight="@+id/sign"
+            android:layout_alignEnd="@+id/sign" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/ic_menu_crop"
+            android:layout_alignTop="@+id/filename"
+            android:layout_alignRight="@+id/sign"
+            android:layout_alignEnd="@+id/sign" />
+    </RelativeLayout>
+</RelativeLayout>

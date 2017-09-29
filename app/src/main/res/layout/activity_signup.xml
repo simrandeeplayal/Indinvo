@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.simrandeep.invoicemaker.Login.signup">
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        android:layout_marginRight="20dp"
+        android:id="@+id/fn"
+        android:textColorHighlight="#ffffff"
+        android:layout_marginTop="100dp"
+        android:textSize="15sp"
+        android:hint="Company Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:textColorHighlight="#ffffff"
+        android:layout_marginTop="2dp"
+        android:id="@+id/enteremail"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:textSize="15sp"
+        android:id="@+id/enterpass"
+        android:textColorHighlight="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPassword"
+        android:hint="Password Min 6 Char"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="40dp"
+        android:id="@+id/repass"
+        android:background="#fff"
+        android:textSize="15sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:textColorHighlight="#ffffff"
+        android:hint="Contact Person"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:inputType="number"
+        android:background="#fff"
+        android:textSize="15sp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/num"
+        android:maxLength="10"
+        android:layout_marginLeft="20dp"
+        android:textColorHighlight="#ffffff"
+
+        android:hint="Phone Number"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:id="@+id/cb"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="#ffffff"
+        android:text="I agree to the Terms and condition"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-UP"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/signup"
+        android:layout_marginRight="60dp"
+        android:textColorHighlight="#ffffff"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button1"
+        android:textColor="#fff"
+
+        />
+
+
+</LinearLayout>
+</ScrollView>

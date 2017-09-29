@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#7fccc4"
+    android:layout_height="wrap_content"
+    tools:context="com.example.simrandeep.invoicemaker.pdfreader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/discountl1"
+        android:background="#ffff"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Discount(%)"
+                android:id="@+id/editdiscount"
+                android:gravity="right"
+                android:inputType="number"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/discountl2"
+        android:layout_below="@+id/discountl1"
+        android:background="#ffff"
+        android:layout_marginTop="40dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/savedis"
+            android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

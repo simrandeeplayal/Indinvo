@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/paymentDETAILS">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Invo"
+            android:background="@color/colorPrimaryDark">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Payment Details"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:text="Payment Info"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:id="@+id/bankedetails"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:text="Bank Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:id="@+id/banknamedetails"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="IFSC Code"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ifsc_details"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:text="Account Holder"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:id="@+id/accholder_details"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Account Number"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:id="@+id/accno_details"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

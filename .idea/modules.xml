@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Indinvo.iml" filepath="$PROJECT_DIR$/Indinvo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Invoicemaker.iml" filepath="$PROJECT_DIR$/Invoicemaker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
